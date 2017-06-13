@@ -31,8 +31,8 @@ public static HashSet<String> wordsInGrid(int rows, int cols, char [] [] grid, D
 	return validWords;
 }
 
-public static HashSet<String> searchFromCell(int i, int j, String word, char [] [] grid, boolean [] [] visited,
-											 Dictionary dictionary, int rows, int cols) {
+public static HashSet<String> searchFromCell(int i, int j, String word, char [] [] grid, 
+					     boolean [] [] visited, Dictionary dictionary, int rows, int cols) {
 	/** store valid words */
 	HashSet<String> wordsFromCell = new HashSet<String>();
 	
