@@ -12,7 +12,7 @@ import javax.print.attribute.Size2DSyntax;
 public class WordSearch {
 
 /**
-* Searches for valid words starting from each cell on the grid
+* Call a method that starts a search for valid words starting from each cell on the grid
 */
 public static HashSet<String> wordsInGrid(int rows, int cols, char [] [] grid, Dictionary dictionary){
 	
@@ -31,6 +31,9 @@ public static HashSet<String> wordsInGrid(int rows, int cols, char [] [] grid, D
 	return validWords;
 }
 
+/**
+* Search for valid words at cell (i, j) with a prefix word 
+*/
 public static HashSet<String> searchFromCell(int i, int j, String word, char [] [] grid, 
 					     boolean [] [] visited, Dictionary dictionary, int rows, int cols) {
 	/** store valid words */
