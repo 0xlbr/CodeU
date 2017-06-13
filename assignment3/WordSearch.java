@@ -60,6 +60,6 @@ public static HashSet<String> searchFromCell(int i, int j, String word, char [] 
 			}
 		}
 	}
-		return wordsFromCell;
+	return wordsFromCell;
 }
 }
