@@ -10,12 +10,12 @@ public class TestPrintAncestors {
 	
 	@Before
 	public void setUp(){
-		Tree<Integer> t6 = new Tree<Integer>(6, null, null);
-		Tree<Integer> t5 = new Tree<Integer>(5, null, null);
-		Tree<Integer> t4 = new Tree<Integer>(4, null, null);
+		Tree<Integer> t6 = new Tree<Integer> (6, null, null);
+		Tree<Integer> t5 = new Tree<Integer> (5, null, null);
+		Tree<Integer> t4 = new Tree<Integer> (4, null, null);
 		Tree<Integer> t3  = new Tree<Integer> (3, null, null);
 		Tree<Integer> t1  = new Tree<Integer> (1, t3, t4);
-		Tree<Integer> t2 = new Tree<Integer>(2, t5, t6);
+		Tree<Integer> t2 = new Tree<Integer> (2, t5, t6);
 		root = new Tree<Integer> (0, t1, t2);
 	}
 
