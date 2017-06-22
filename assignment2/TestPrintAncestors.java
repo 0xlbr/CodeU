@@ -32,7 +32,7 @@ public class TestPrintAncestors {
 	@Test
 	public void testKeyAtRoot() {
 		ByteArrayOutputStream expectedOutput = new ByteArrayOutputStream();
-	    System.setOut(new PrintStream(expectedOutput));
+		System.setOut(new PrintStream(expectedOutput));
 		assertEquals(PrintAncestors.ancestors(root, 0), true);
 		assertEquals(expectedOutput.toString(), "");
 	}
@@ -40,7 +40,7 @@ public class TestPrintAncestors {
 	@Test
 	public void testNearLeavesLeft() {
 		ByteArrayOutputStream expectedOutput = new ByteArrayOutputStream();
-	    System.setOut(new PrintStream(expectedOutput));
+		System.setOut(new PrintStream(expectedOutput));
 		assertEquals(PrintAncestors.ancestors(root, 3), true);
 		assertEquals(expectedOutput.toString(), "1" + "\n" + "0" + "\n");
 	}
@@ -48,7 +48,7 @@ public class TestPrintAncestors {
 	@Test
 	public void testNearLeavesRight() {
 		ByteArrayOutputStream expectedOutput = new ByteArrayOutputStream();
-	    System.setOut(new PrintStream(expectedOutput));
+		System.setOut(new PrintStream(expectedOutput));
 		assertEquals(PrintAncestors.ancestors(root, 5), true);
 		assertEquals(expectedOutput.toString(), "2" + "\n" + "0" + "\n");
 	}
@@ -56,7 +56,7 @@ public class TestPrintAncestors {
 	@Test
 	public void testInternalNodes() {
 		ByteArrayOutputStream expectedOutput = new ByteArrayOutputStream();
-	    System.setOut(new PrintStream(expectedOutput));
+		System.setOut(new PrintStream(expectedOutput));
 		assertEquals(PrintAncestors.ancestors(root, 2), true);
 		assertEquals(expectedOutput.toString(),  "0" + "\n");
 	}
