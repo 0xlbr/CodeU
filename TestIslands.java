@@ -20,17 +20,17 @@ public class TestIslands {
 	}
 	
 	@Test
-	public void testOneRow(){
+	public void testOneRow() {
 		assertEquals(2, Islands.islands(1, 4, map));
 	}
 	
 	@Test
-	public void testOneColumn(){
+	public void testOneColumn() {
 		assertEquals(1, Islands.islands(4, 1, map));
 	}
 	
 	@Test
-	public void testEmpty(){
+	public void testEmpty() {
 		assertEquals(0, Islands.islands(2, 2, ocean));
 	}
 }
