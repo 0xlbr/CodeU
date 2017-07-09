@@ -6,7 +6,7 @@ public class Islands {
 	* @param map This is the matrix.
 	* @return int This is the number of islands.
 	*/
-	public static int islands(int m, int n, boolean [] [] map){
+	public static int islands(int m, int n, boolean [] [] map) {
 		int islands = 0;
 		// go through each cell of the matrix and perform DFS from there if you find a land (cell with  value true)
 		for (int i = 0; i < m; i++) {
@@ -28,7 +28,7 @@ public class Islands {
 	*/
 	private static int DFS(int i, int j, boolean[][] map) {
 		// if you find land in a valid cell of the map, set it to false and call DFS for all adjacent cells.
-		if (i>=0 && j>=0 && i<map.length && j<map[0].length && map [i] [j] == true){
+		if (i>=0 && j>=0 && i<map.length && j<map[0].length && map [i] [j] == true) {
 			map [i] [j] = false;
 			DFS(i-1, j, map);
 			DFS(i, j-1, map);
