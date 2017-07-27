@@ -67,7 +67,7 @@ public class ParkingLot {
 	/**
 	* This method is used to swap the positions of two elements in an array of integers.
 	* @param i This is the position of the first integer to be swapped in the array.
-	* @param i This is the position of the second integer to be swapped in the array.
+	* @param j This is the position of the second integer to be swapped in the array.
 	*/	
 	private static void swap(int i, int j, int [] arrangement) {
 		int temp=arrangement[i];
