@@ -11,7 +11,7 @@ public class ParkingLot {
 	* This method is used to print a series of moves that transform the first in the second array by 
 	* swapping any integer with 0. The integers represent the numbers of each car in a parking lot.
 	* @param initialArrangement This is the starting arrangement of the integers.
-	* @param targetArrangement 	This is the the target arrangement of the integers.
+	* @param targetArrangement  This is the the target arrangement of the integers.
 	*/	
 	public static void rearrange(int [] initialArrangement, int [] targetArrangement) {
 		if (initialArrangement.length!=targetArrangement.length) {
