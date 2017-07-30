@@ -21,10 +21,10 @@ public class testParkingLot {
                             Arrays.toString(expected[4]) + "\n";
 
 		ByteArrayOutputStream actualOutput = new ByteArrayOutputStream();
-	  System.setOut(new PrintStream(actualOutput));
+	  	System.setOut(new PrintStream(actualOutput));
 		int [] initialArrangement = new int [] {1, 2, 0, 3};
 		int [] targetArrangement = new int [] {3, 1, 2, 0};
-	  ParkingLot.rearrange(initialArrangement, targetArrangement);
+	  	ParkingLot.rearrange(initialArrangement, targetArrangement);
     
 		assertEquals(ExpectedString, actualOutput.toString());
 	}
