@@ -18,12 +18,12 @@ public class ParkingLot {
 			throw new IllegalArgumentException("Number of slots in initial and target configurations don't match!");
 		}
 		for (int i = 0; i < targetArrangement.length; i++) {
-			if (initialArrangement[i]==0) {
+			if (initialArrangement[i] == 0) {
 				emptySlot=i;
 				break;
 			}
 		}
-		if (emptySlot==-1) {
+		if (emptySlot == -1) {
 			throw new IllegalArgumentException("There is no empty park space!");	
 		}
 		/* create a hashmap that has for keys the numbers of the cars and for values their current positions in the parking lot */
@@ -37,8 +37,8 @@ public class ParkingLot {
 			/* the car that is actually parked in the slot i */
 			int currCar=initialArrangement[i];
 			/* if slot i isn't empty, empty it */
-			if (currCar!=targetCar) {
-				if (currCar!=0) {
+			if (currCar != targetCar) {
+				if (currCar != 0) {
 					//enter the new positions in the map
 					positions.put(currCar, emptySlot);
 					positions.put(0, i);
