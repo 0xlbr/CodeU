@@ -2,9 +2,9 @@ import java.util.Arrays;
 import java.util.HashMap;
 
 public class ParkingLot {
-	//A hashmap that maps the number that represents each car to its position in the parking lot.
+	/*A hashmap that maps the number that represents each car to its position in the parking lot. */
 	public static HashMap<Integer, Integer> positions = new HashMap<Integer, Integer>();
-	//A pointer to the position of the empty slot
+	/*A pointer to the position of the empty slot */
 	public static int emptySlot=-1;
 	
 	/**
@@ -26,17 +26,17 @@ public class ParkingLot {
 		if (emptySlot==-1) {
 			throw new IllegalArgumentException("There is no empty park space!");	
 		}
-		//create a hashmap that has for keys the numbers of the cars and for values their current positions in the parking lot
+		/* create a hashmap that has for keys the numbers of the cars and for values their current positions in the parking lot */
 		for (int i = 0; i<initialArrangement.length; i++) {
 			positions.put(initialArrangement[i], i);
 		}
-		//check if a parking space doesn't have the correct car parked in it.
+		/* check if a parking space doesn't have the correct car parked in it. */
 		for (int i = 0; i < targetArrangement.length; i++) {
-			//the car that has to be parked in slot i
+			/* the car that has to be parked in slot i */
 			int targetCar=targetArrangement[i];
-			//the car that is actually parked in the slot i
+			/* the car that is actually parked in the slot i */
 			int currCar=initialArrangement[i];
-			//if slot i isn't empty, empty it
+			/* if slot i isn't empty, empty it */
 			if (currCar!=targetCar) {
 				if (currCar!=0) {
 					//enter the new positions in the map
@@ -48,7 +48,7 @@ public class ParkingLot {
 					emptySlot=i;
 					System.out.println(Arrays.toString(initialArrangement));
 				}
-				//if the target for slot i isn't the empty slot, move the correct car at i
+				/* if the target for slot i isn't the empty slot, move the correct car at i */
 				if (targetCar!=0) {
 					int currPosTargetCar = positions.get(targetCar); 
 					//enter the new positions in the map
